@@ -19,9 +19,9 @@
     - About me
 
 
-Get domain :done:
-Find CMS that does not suck ass (netlify?) probably just wordpress :(
-Write stuff
+Get domain :done: \
+Find CMS that does not suck ass (netlify?) probably just wordpress :( \
+Write stuff \
 Release gradually
 
 
