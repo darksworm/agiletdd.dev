@@ -25,4 +25,9 @@ class SortTest extends TestCase
     {
         $this->assertEquals([], bubbleSort([]));
     }
+
+    public function test_arrayAlreadySorted_isStillSorted()
+    {
+        $this->assertEquals([1, 2, 3], bubbleSort([1, 2, 3]));
+    }
 }
