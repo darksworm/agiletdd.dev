@@ -1,3 +1,9 @@
+-- What question does this article answer?
+
+Why and when use Outside-in TDD
+
+-- What about the mock approach?
+
 # What is TDD
 
 TDD or Test-Driven-Development is a programming practice which runs on a Red, Green, Refactor cycle.
@@ -9,7 +15,7 @@ Refactor - the written code is cleaned up.
 If you're not familliar with TDD, you can read more about it in uncle bobs blog - http://www.butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd
 Or get kent becks book "Test-Driven Development by example" https://www.amazon.com/gp/product/0321146530/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321146530&linkCode=as2&tag=martinfowlerc-20
 
-# What is Outside-in-TDD
+# What is Outside-in-TDD / London school of TDD
 
 In outside-in-tdd you start by writing a "guiding star" test that covers the whole feature/change you're going to implement.
 
@@ -21,6 +27,8 @@ And repeat.
 Basically it's TDD but with a test which you run between your Red-Green-Refactor cycle to tell you what the next thing you have to implement is - that's why I've called it the "guiding star".
 
 -- This is just a horrible segment, please reword me.
+
+# Mocking, mocking, mocking
 
 # What's my experience with it
 
@@ -37,6 +45,7 @@ Because you have to write a test that encompasses the whole problem you're solvi
 
 # What's not so good
 The initial step of writing the guiding star test takes a lot of effort and brain power - it forces you to make decisions up front.
+
 
 
 
