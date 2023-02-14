@@ -2,18 +2,18 @@
 [Intro] [Easy] [Test Driven Development]
 
 Refactoring is hard. It is even harder when you don't understand the code that you have to refactor. \
-To ensure that you've your job properly, you should understand the code you're editing completely.
-Does that sound correct to you? I want to break that necessity by using tests to take that weight of of my shoulders.
+To ensure that you've done your job properly, you should understand the code you're editing completely.
+Does that sound correct to you? Using TDD, you can break that necessity and avoid a lot of headache.
 
 Here are the rules:
 1. Don't make any changes to production code before all functionality is covered by tests
-2. Refer to rule 1
+2. Run tests after making small changes to the production code
 
 How do you do it? Well, I'll try to show you.
 
 Here is a piece of PHP I found on github that supposedly sorts an array using the bubble-sort algorithm. \
 I am using the word "supposedly" because I don't really know what the code does - by all means it looks like a \
-sorting function, but I don't trust it because I don't know it.
+sorting function, but I don't trust it.
 
 ```php
 function bubbleSort($arr) {
@@ -35,7 +35,7 @@ function bubbleSort($arr) {
 
 You can immediately notice some weird things in the code, like for example, the first line in the function is just \
 `$temp` which literally does nothing. Then there's two for loops and some funky stuff going on, I'm not sure how this sort \
-works but I don't want to try figuring it out by reading the code, because I don't have to, because when writing tests \
+works but I don't want to spend time understanding it by reading the code, because I don't think I have to, because when writing tests \
 I don't care about the inner workings of the code under test, just the results and side-effects.
 
 I will begin with the simplest test I can imagine.
@@ -48,7 +48,7 @@ public function test_sortedEmptyArray_isEmptyArray()
 ```
 
 And it passes! Amazing. I am a real programmer. Okay, jokes aside - I write the simplest tests first, because I don't \
-want to exert more effort than necessary and because if I go straight for the hard paths, I might leave some simple cases \
+want to exert more effort than necessary and if I were to go straight for the hard paths, I might leave some simple cases \
 uncovered and those are just as liable to bugs as the simplest paths. Generally I try to avoid testing the "golden path" \
 until I have covered everything else.
 
